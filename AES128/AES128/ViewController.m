@@ -26,9 +26,9 @@
     NSString *strDecrypt = [LJXAES128  AES128DecryptString:strEncrpyt];
     NSLog(@"加密：%@      解密字符串:%@",strEncrpyt,strDecrypt);
     
-    NSData *keyData = [self converHexStrToData:@"BA28166F462BFCE342EFB3FD44B2FD0E"];
-    NSString *result =[[ NSString alloc] initWithData:keyData encoding:NSUTF8StringEncoding];
-    NSLog(@"result====:%@",result);
+//    NSData *keyData = [self converHexStrToData:@"BA28166F462BFCE342EFB3FD44B2FD0E"];
+//    NSString *result =[[ NSString alloc] initWithData:keyData encoding:NSUTF8StringEncoding];
+//    NSLog(@"result====:%@",result);
 }
 
 
