@@ -28,6 +28,20 @@
     return [LJXAES128 convertDataToHexStr:aesData];
 }
 
++ (NSString *)AES128EncryptkeyString:(NSData *)data{
+    
+    NSData *aesData = [data AES128EncrypWithStringKey:KEY];
+    
+    return [LJXAES128 convertDataToHexStr:aesData];
+}
+
++ (NSString *)AES128DecryptkeyString:(NSString *)string{
+    
+    NSData *data = [LJXAES128 converHexStrToData:string];
+    NSData *aesData = [data AES128DecryptWithStringKey:KEY];
+    return [LJXAES128 convertDataToHexStr:aesData];
+}
+
 //+ (NSData *)AES128EncryptData:(NSData *)data{
 //    NSData *aesData = [data AES128EncrypWithKey:KEY];
 //    return aesData;
