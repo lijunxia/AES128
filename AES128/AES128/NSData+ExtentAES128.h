@@ -27,4 +27,21 @@
  @return 解密之后的NSDate
  */
 - (NSData *)AES128DecryptWithKey:(NSData *)key;
+
+/**
+ 加密
+ 
+ @param key 公钥
+ @return 加密之后的NSData
+ */
+- (NSData *)AES128EncrypWithStringKey:(NSString *)key;
+
+
+/**
+ 解密
+ 
+ @param key 公钥
+ @return 解密之后的NSDate
+ */
+- (NSData *)AES128DecryptWithStringKey:(NSString *)key;
 @end
