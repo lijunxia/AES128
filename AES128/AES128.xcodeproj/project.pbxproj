@@ -1,0 +1,567 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 48;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		5C6F1A041F7CB18500131C50 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 5C6F1A031F7CB18500131C50 /* AppDelegate.m */; };
+		5C6F1A071F7CB18500131C50 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5C6F1A061F7CB18500131C50 /* ViewController.m */; };
+		5C6F1A0A1F7CB18500131C50 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5C6F1A081F7CB18500131C50 /* Main.storyboard */; };
+		5C6F1A0C1F7CB18500131C50 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5C6F1A0B1F7CB18500131C50 /* Assets.xcassets */; };
+		5C6F1A0F1F7CB18500131C50 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5C6F1A0D1F7CB18500131C50 /* LaunchScreen.storyboard */; };
+		5C6F1A121F7CB18500131C50 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 5C6F1A111F7CB18500131C50 /* main.m */; };
+		5C6F1A1C1F7CB18500131C50 /* AES128Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = 5C6F1A1B1F7CB18500131C50 /* AES128Tests.m */; };
+		5C6F1A271F7CB18500131C50 /* AES128UITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 5C6F1A261F7CB18500131C50 /* AES128UITests.m */; };
+		5C6F1A361F7CB1C100131C50 /* LJXAES128.m in Sources */ = {isa = PBXBuildFile; fileRef = 5C6F1A351F7CB1C100131C50 /* LJXAES128.m */; };
+		5C6F1A391F7CB21C00131C50 /* NSData+ExtentAES128.m in Sources */ = {isa = PBXBuildFile; fileRef = 5C6F1A381F7CB21C00131C50 /* NSData+ExtentAES128.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		5C6F1A181F7CB18500131C50 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 5C6F19F71F7CB18500131C50 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 5C6F19FE1F7CB18500131C50;
+			remoteInfo = AES128;
+		};
+		5C6F1A231F7CB18500131C50 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 5C6F19F71F7CB18500131C50 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 5C6F19FE1F7CB18500131C50;
+			remoteInfo = AES128;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		5C6F19FF1F7CB18500131C50 /* AES128.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AES128.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		5C6F1A021F7CB18500131C50 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		5C6F1A031F7CB18500131C50 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		5C6F1A051F7CB18500131C50 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		5C6F1A061F7CB18500131C50 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		5C6F1A091F7CB18500131C50 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		5C6F1A0B1F7CB18500131C50 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		5C6F1A0E1F7CB18500131C50 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		5C6F1A101F7CB18500131C50 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5C6F1A111F7CB18500131C50 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		5C6F1A171F7CB18500131C50 /* AES128Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AES128Tests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		5C6F1A1B1F7CB18500131C50 /* AES128Tests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AES128Tests.m; sourceTree = "<group>"; };
+		5C6F1A1D1F7CB18500131C50 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5C6F1A221F7CB18500131C50 /* AES128UITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AES128UITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		5C6F1A261F7CB18500131C50 /* AES128UITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AES128UITests.m; sourceTree = "<group>"; };
+		5C6F1A281F7CB18500131C50 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5C6F1A341F7CB1C100131C50 /* LJXAES128.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LJXAES128.h; sourceTree = "<group>"; };
+		5C6F1A351F7CB1C100131C50 /* LJXAES128.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LJXAES128.m; sourceTree = "<group>"; };
+		5C6F1A371F7CB21C00131C50 /* NSData+ExtentAES128.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSData+ExtentAES128.h"; sourceTree = "<group>"; };
+		5C6F1A381F7CB21C00131C50 /* NSData+ExtentAES128.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSData+ExtentAES128.m"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		5C6F19FC1F7CB18500131C50 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5C6F1A141F7CB18500131C50 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5C6F1A1F1F7CB18500131C50 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		5C6F19F61F7CB18500131C50 = {
+			isa = PBXGroup;
+			children = (
+				5C6F1A011F7CB18500131C50 /* AES128 */,
+				5C6F1A1A1F7CB18500131C50 /* AES128Tests */,
+				5C6F1A251F7CB18500131C50 /* AES128UITests */,
+				5C6F1A001F7CB18500131C50 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		5C6F1A001F7CB18500131C50 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				5C6F19FF1F7CB18500131C50 /* AES128.app */,
+				5C6F1A171F7CB18500131C50 /* AES128Tests.xctest */,
+				5C6F1A221F7CB18500131C50 /* AES128UITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		5C6F1A011F7CB18500131C50 /* AES128 */ = {
+			isa = PBXGroup;
+			children = (
+				5C6F1A021F7CB18500131C50 /* AppDelegate.h */,
+				5C6F1A031F7CB18500131C50 /* AppDelegate.m */,
+				5C6F1A051F7CB18500131C50 /* ViewController.h */,
+				5C6F1A061F7CB18500131C50 /* ViewController.m */,
+				5C6F1A081F7CB18500131C50 /* Main.storyboard */,
+				5C6F1A0B1F7CB18500131C50 /* Assets.xcassets */,
+				5C6F1A0D1F7CB18500131C50 /* LaunchScreen.storyboard */,
+				5C6F1A101F7CB18500131C50 /* Info.plist */,
+				5C6F1A111F7CB18500131C50 /* main.m */,
+				5C6F1A341F7CB1C100131C50 /* LJXAES128.h */,
+				5C6F1A351F7CB1C100131C50 /* LJXAES128.m */,
+				5C6F1A371F7CB21C00131C50 /* NSData+ExtentAES128.h */,
+				5C6F1A381F7CB21C00131C50 /* NSData+ExtentAES128.m */,
+			);
+			path = AES128;
+			sourceTree = "<group>";
+		};
+		5C6F1A1A1F7CB18500131C50 /* AES128Tests */ = {
+			isa = PBXGroup;
+			children = (
+				5C6F1A1B1F7CB18500131C50 /* AES128Tests.m */,
+				5C6F1A1D1F7CB18500131C50 /* Info.plist */,
+			);
+			path = AES128Tests;
+			sourceTree = "<group>";
+		};
+		5C6F1A251F7CB18500131C50 /* AES128UITests */ = {
+			isa = PBXGroup;
+			children = (
+				5C6F1A261F7CB18500131C50 /* AES128UITests.m */,
+				5C6F1A281F7CB18500131C50 /* Info.plist */,
+			);
+			path = AES128UITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		5C6F19FE1F7CB18500131C50 /* AES128 */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5C6F1A2B1F7CB18500131C50 /* Build configuration list for PBXNativeTarget "AES128" */;
+			buildPhases = (
+				5C6F19FB1F7CB18500131C50 /* Sources */,
+				5C6F19FC1F7CB18500131C50 /* Frameworks */,
+				5C6F19FD1F7CB18500131C50 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = AES128;
+			productName = AES128;
+			productReference = 5C6F19FF1F7CB18500131C50 /* AES128.app */;
+			productType = "com.apple.product-type.application";
+		};
+		5C6F1A161F7CB18500131C50 /* AES128Tests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5C6F1A2E1F7CB18500131C50 /* Build configuration list for PBXNativeTarget "AES128Tests" */;
+			buildPhases = (
+				5C6F1A131F7CB18500131C50 /* Sources */,
+				5C6F1A141F7CB18500131C50 /* Frameworks */,
+				5C6F1A151F7CB18500131C50 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				5C6F1A191F7CB18500131C50 /* PBXTargetDependency */,
+			);
+			name = AES128Tests;
+			productName = AES128Tests;
+			productReference = 5C6F1A171F7CB18500131C50 /* AES128Tests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		5C6F1A211F7CB18500131C50 /* AES128UITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5C6F1A311F7CB18500131C50 /* Build configuration list for PBXNativeTarget "AES128UITests" */;
+			buildPhases = (
+				5C6F1A1E1F7CB18500131C50 /* Sources */,
+				5C6F1A1F1F7CB18500131C50 /* Frameworks */,
+				5C6F1A201F7CB18500131C50 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				5C6F1A241F7CB18500131C50 /* PBXTargetDependency */,
+			);
+			name = AES128UITests;
+			productName = AES128UITests;
+			productReference = 5C6F1A221F7CB18500131C50 /* AES128UITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		5C6F19F71F7CB18500131C50 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0900;
+				ORGANIZATIONNAME = flowLayout;
+				TargetAttributes = {
+					5C6F19FE1F7CB18500131C50 = {
+						CreatedOnToolsVersion = 9.0;
+						ProvisioningStyle = Automatic;
+					};
+					5C6F1A161F7CB18500131C50 = {
+						CreatedOnToolsVersion = 9.0;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 5C6F19FE1F7CB18500131C50;
+					};
+					5C6F1A211F7CB18500131C50 = {
+						CreatedOnToolsVersion = 9.0;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 5C6F19FE1F7CB18500131C50;
+					};
+				};
+			};
+			buildConfigurationList = 5C6F19FA1F7CB18500131C50 /* Build configuration list for PBXProject "AES128" */;
+			compatibilityVersion = "Xcode 8.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 5C6F19F61F7CB18500131C50;
+			productRefGroup = 5C6F1A001F7CB18500131C50 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				5C6F19FE1F7CB18500131C50 /* AES128 */,
+				5C6F1A161F7CB18500131C50 /* AES128Tests */,
+				5C6F1A211F7CB18500131C50 /* AES128UITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		5C6F19FD1F7CB18500131C50 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5C6F1A0F1F7CB18500131C50 /* LaunchScreen.storyboard in Resources */,
+				5C6F1A0C1F7CB18500131C50 /* Assets.xcassets in Resources */,
+				5C6F1A0A1F7CB18500131C50 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5C6F1A151F7CB18500131C50 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5C6F1A201F7CB18500131C50 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		5C6F19FB1F7CB18500131C50 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5C6F1A361F7CB1C100131C50 /* LJXAES128.m in Sources */,
+				5C6F1A071F7CB18500131C50 /* ViewController.m in Sources */,
+				5C6F1A391F7CB21C00131C50 /* NSData+ExtentAES128.m in Sources */,
+				5C6F1A121F7CB18500131C50 /* main.m in Sources */,
+				5C6F1A041F7CB18500131C50 /* AppDelegate.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5C6F1A131F7CB18500131C50 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5C6F1A1C1F7CB18500131C50 /* AES128Tests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5C6F1A1E1F7CB18500131C50 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5C6F1A271F7CB18500131C50 /* AES128UITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		5C6F1A191F7CB18500131C50 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 5C6F19FE1F7CB18500131C50 /* AES128 */;
+			targetProxy = 5C6F1A181F7CB18500131C50 /* PBXContainerItemProxy */;
+		};
+		5C6F1A241F7CB18500131C50 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 5C6F19FE1F7CB18500131C50 /* AES128 */;
+			targetProxy = 5C6F1A231F7CB18500131C50 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		5C6F1A081F7CB18500131C50 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				5C6F1A091F7CB18500131C50 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		5C6F1A0D1F7CB18500131C50 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				5C6F1A0E1F7CB18500131C50 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		5C6F1A291F7CB18500131C50 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		5C6F1A2A1F7CB18500131C50 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		5C6F1A2C1F7CB18500131C50 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 8XFKYK5W86;
+				INFOPLIST_FILE = AES128/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.Qdong365.AES128;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		5C6F1A2D1F7CB18500131C50 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 8XFKYK5W86;
+				INFOPLIST_FILE = AES128/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.Qdong365.AES128;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		5C6F1A2F1F7CB18500131C50 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = AES128Tests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.Qdong365.AES128Tests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/AES128.app/AES128";
+			};
+			name = Debug;
+		};
+		5C6F1A301F7CB18500131C50 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = AES128Tests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.Qdong365.AES128Tests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/AES128.app/AES128";
+			};
+			name = Release;
+		};
+		5C6F1A321F7CB18500131C50 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = AES128UITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.Qdong365.AES128UITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = AES128;
+			};
+			name = Debug;
+		};
+		5C6F1A331F7CB18500131C50 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = AES128UITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.Qdong365.AES128UITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = AES128;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		5C6F19FA1F7CB18500131C50 /* Build configuration list for PBXProject "AES128" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5C6F1A291F7CB18500131C50 /* Debug */,
+				5C6F1A2A1F7CB18500131C50 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		5C6F1A2B1F7CB18500131C50 /* Build configuration list for PBXNativeTarget "AES128" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5C6F1A2C1F7CB18500131C50 /* Debug */,
+				5C6F1A2D1F7CB18500131C50 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		5C6F1A2E1F7CB18500131C50 /* Build configuration list for PBXNativeTarget "AES128Tests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5C6F1A2F1F7CB18500131C50 /* Debug */,
+				5C6F1A301F7CB18500131C50 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		5C6F1A311F7CB18500131C50 /* Build configuration list for PBXNativeTarget "AES128UITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5C6F1A321F7CB18500131C50 /* Debug */,
+				5C6F1A331F7CB18500131C50 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 5C6F19F71F7CB18500131C50 /* Project object */;
+}
